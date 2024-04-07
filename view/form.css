@@ -1,0 +1,112 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 20px;
+    box-shadow: 0 0 5px black;
+    background-color: skyblue;
+    color:rgb(3, 3, 81);
+  }
+  fieldset{
+    border: 2px solid white;
+  }
+  select{
+    cursor: pointer;
+  }
+  select:focus{
+    border: 2px solid black;
+  }
+  h1 {
+    text-align: center;
+  }
+  form {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  fieldset {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+  }
+  small{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-weight: 500;
+  }
+  input{
+    border: 1px solid black;
+    border-radius: 6px;
+  }
+  legend{
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  input:focus {
+    box-shadow: 0.5px 0.5px 1.5px black;
+  }
+  #Dob{
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  small {
+    display: block;
+    color: black;
+  }
+  
+  /* Customize checkbox and radio buttons */
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  /* Center align checkbox and radio button labels */
+  input[type="checkbox"] + label,
+  input[type="radio"] + label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* Add margin to the bottom of checkbox and radio button groups */
+  input[type="checkbox"] + label,
+  input[type="radio"] + label {
+    margin-bottom: 10px;
+  }
+
+
+  input[type="file"]{
+    cursor: pointer;
+  }

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detailed Form</title>
+  <style>
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px 20px;
+      box-shadow: 0 0 5px black;
+      background-color: skyblue;
+      color:rgb(3, 3, 81);
+    }
+    fieldset{
+      border: 2px solid white;
+    }
+    select{
+      cursor: pointer;
+    }
+    select:focus{
+      border: 2px solid black;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    fieldset {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 1vh;
+      margin-top: 1vh;
+    }
+    small{
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+      font-weight: 500;
+    }
+    input{
+      border: 1px solid black;
+      border-radius: 6px;
+    }
+    legend{
+      font-weight: bold;
+      font-size: 1.4rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    input:focus {
+      box-shadow: 0.5px 0.5px 1.5px black;
+    }
+    #Dob{
+      padding: 5px;
+      cursor: pointer;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+    
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    small {
+      display: block;
+      color: black;
+    }
+    
+    /* Customize checkbox and radio buttons */
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-right: 5px;
+      cursor: pointer;
+    }
+    
+    /* Center align checkbox and radio button labels */
+    input[type="checkbox"] + label,
+    input[type="radio"] + label {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    /* Add margin to the bottom of checkbox and radio button groups */
+    input[type="checkbox"] + label,
+    input[type="radio"] + label {
+      margin-bottom: 10px;
+    }
+  
+  
+    input[type="file"]{
+      cursor: pointer;
+    }
+  </style>
+  <link rel="stylesheet" href="form.css">
+  
+</head>
+<body>
+  <div class="container">
+    
+    <h1>School Admission Form</h1>
+    <form id="detailedForm" action="/upload/uploadFiles" method="post" enctype="multipart/form-data">
+   
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="Fullname">Student Name:</label>
+        <input type="text" id="Fullname" name="fullname" required><br>
+
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="email" required><br>
+
+        <label for="Phone">Phone:</label>
+        <input type="tel" id="Phone" name="phone" required><br>
+
+        <label for="Dob">Date of Birth:</label>
+        <input type="date" id="Dob" name="dob" required><br><br>
+
+        <label for="Place_of_birth">Place Of Birth:</label>
+        <input type="text" id="Place_of_birth" name="place_of_birth" required>
+
+        <h3>Select Religion:</h3>
+        <label for="Religion">Choose your religion:</label>
+        <select id="Religion" name="religion">
+          <option value="christianity">Christianity</option>
+          <option value="islam">Islam</option>
+          <option value="hinduism">Hinduism</option>
+          <option value="buddhism">Buddhism</option>
+          <option value="judaism">Judaism</option>
+          <option value="sikhism">Sikhism</option>
+          <option value="other">Other</option>
+        </select>
+
+        <h3>Select Nationality:</h3>
+        <select id="nationality" name="nationality">
+          <option value="Indian">Indian</option>
+          <option value="uk">UK</option>
+          <option value="canada">Canada</option>
+          <option value="australia">Australia</option>
+          <option value="germany">Germany</option>
+          <option value="france">France</option>
+          <option value="japan">Japan</option>
+  
+        </select><br>
+
+        <label for="Gender">Gender:</label>
+        <select id="Gender" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select><br>
+
+        <label for="Address">Address:</label>
+        <textarea id="Address" name="address" rows="4" required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Education Details</legend>
+        <label for="LastSchool">Name of last School:</label>
+        <input type="text" id="LastSchool" name="lastSchool" required><br>
+
+        <h3>Select Medium of Instruction</h3>
+        <label for="Medium">Choose medium of instruction:</label>
+        <select id="Medium" name="medium">
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+          <option value="french">French</option>
+          <option value="german">German</option>
+          <option value="chinese">Chinese</option>
+     
+        </select>
+
+        <h3>Select Previous Standard</h3>
+        <label for="Standard">Choose the standard:</label>
+        <select id="Standard" name="standard">
+          <option value="1">Standard 1</option>
+          <option value="2">Standard 2</option>
+          <option value="3">Standard 3</option>
+          <option value="4">Standard 4</option>
+          <option value="5">Standard 5</option>
+          <option value="6">Standard 6</option>
+          <option value="7">Standard 7</option>
+          <option value="8">Standard 8</option>
+          <option value="9">Standard 9</option>
+          <option value="10">Standard 10</option>
+          <option value="11">Standard 11</option>
+          <option value="12">Standard 12</option>
+      
+        </select>
+
+        <h3>Select Standard for Admission</h3>
+        <label for="Admission_standard">Choose the standard:</label>
+        <select id="Admission_standard" name="admission_standard">
+          <option value="1">Standard 1</option>
+          <option value="2">Standard 2</option>
+          <option value="3">Standard 3</option>
+          <option value="4">Standard 4</option>
+          <option value="5">Standard 5</option>
+          <option value="6">Standard 6</option>
+          <option value="7">Standard 7</option>
+          <option value="8">Standard 8</option>
+          <option value="9">Standard 9</option>
+          <option value="10">Standard 10</option>
+          <option value="11">Standard 11</option>
+          <option value="12">Standard 12</option>
+          
+        </select>
+
+        <fieldset>
+          <h3>Last School Result</h3>
+          <input type="radio" id="Pass" name="result" value="pass" checked>
+          <label for="Pass">Pass</label>
+          <input type="radio" id="Failed" name="result" value="failed">
+          <label for="Failed">Failed</label>
+
+          <label for="Leaving_school">Reason for leaving last school
+          </label>
+          <input type="text" id="Leaving_school" name="leaving_school">
+
+          <h3>Father/Guardian Name</h3>
+          <label for="First_name">First Name:</label>
+          <input type="text" id="First_name" name="first_name" required>
+          <label for="Last_name">Last Name:</label>
+          <input type="text" id="Last_name" name="last_name" required>
+
+          <h3>Guardian Phone Number</h3>
+          <label for="Guardian_Phone">Phone Number:</label>
+          <input type="tel" id="Guardian_Phone" name="guardian_phone" pattern="[0-9]{10}" required>
+          <small>Format: 10-digit number</small>
+
+          <h3>Accept Terms and Conditions</h3>
+          <label for="Accept_terms">
+            <input type="checkbox" id="Accept_terms" name="accept_terms" required>
+            I accept the <a href="#">terms and conditions</a>
+          </label>
+        </fieldset>
+
+        <h3>Upload Documents</h3>
+        <label for="report">Upload Mark-list/Report Card:</label>
+        <input type="file" id="report" name="report" accept="image/*, .pdf" required>
+
+        <label for="medical_certificate">Upload Medical Certificate:</label>
+        <input type="file" id="medical_certificate" name="medical_certificate" accept="image/*, .pdf" required>
+
+        <label for="aadhar">Upload Aadhar Card:</label>
+        <input type="file" id="aadhar" name="aadhar" accept="image/*, .pdf" required>
+
+      </fieldset>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

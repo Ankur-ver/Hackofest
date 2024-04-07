@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="logo2.png">
+    <link rel="stylesheet" href="datesheet.css">
+    <script
+    src="https://kit.fontawesome.com/42a182743f.js"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <style>
+
+		h1 {
+			text-align: center;
+			color: #343a40;
+            margin-top: 2vh;
+            margin-bottom: 1vh;
+            margin-left: 90px;
+		}
+
+		table {
+			border-collapse: collapse;
+			margin: 20px auto;
+			background-color: #fff;
+			border: 2px solid #dee2e6;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-left: 50px;
+		}
+
+		th,
+		td {
+			border: 1px solid #dee2e6;
+			padding: 10px;
+			text-align: center;
+		}
+
+		th {
+			background-color: #f2f2f2;
+			color: #343a40;
+		}
+        
+		.highlight {
+			background-color: #f8f9fa;
+		}
+
+		.special {
+			background-color: #f0f0f0;
+		}
+        .one2{
+            display: flex;
+            flex-direction: column;
+        }
+        #timetable{
+            margin-left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+       <div class="main1">
+        <div class="content1">
+            <img class="image" src="logo2.png" alt="">
+        </div>
+        <div class="content2">
+            <p>Sri Sai Inter College</p>
+        </div>
+       </div>
+       <div class="main2">
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search Students, Staffs, Events....">
+        </div>
+        <div class="profile">
+            <div class="pimg"><img src="images/student.jpg" alt=""></div>
+            <div class="p-cont">
+            <p class="one">Karan Nigam</p>
+            <p class="second">10-A</p>
+        </div>
+            
+        </div>
+       </div>
+    </section>
+    <div class="container">
+        <div class="one1">
+            <div class="sec1">
+                <h4>Main</h4>           
+                <ul>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="sec2">
+                <h4>Administration</h4>           
+                <ul>
+                    <li><a href="/dashboard">Academics</a></li>
+                    <li><a href="https://www.topperlearning.com/">Study Material</a></li>
+                    <li><a href="/start">Students Info</a></li>
+                </ul>
+            </div>
+            <div class="sec3">
+                <h4>Student</h4>           
+                <ul>
+                    <li><a href="/student_profile">Student Profile</a></li>
+                    <li><a href="/fees">Student Fees</a></li>
+                    <li><a href="/homework-section">Homework</a></li>
+                    <li><a href="/dashboard">Transport</a></li>
+                    <li><a href="/library">Library</a></li>
+                </ul>
+            </div>
+            <div class="sec4">
+                <h4>Exams</h4>           
+                <ul>
+                    <li><a href="/datesheet1">Date Sheet</a></li>
+                    <li><a href="/syllabus">Syllabus</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="one2">
+            <h1>TIME TABLE Class 11-12:</h1>
+            <div class="chal">
+                <select name="timetable" id="timetable" onchange="goToPage(this)">
+                    <option value="" selected disabled>Select Time Table</option>
+                    <option value="/datesheet3">Class 11-12</option>
+                    <option value="/datesheet2">Class 6-10</option>
+                    <option value="/datesheet1">Class 1-5</option>
+                </select>
+            </div>
+            <table>
+                <tr>
+                    <th>Day/Period</th>
+                    <th>I<br>9:30-10:20</th>
+                    <th>II<br>10:20-11:10</th>
+                    <th>III<br>11:10-12:00</th>
+                    <th>12:00-12:40</th>
+                    <th>IV<br>12:40-1:30</th>
+                    <th>V<br>1:30-2:20</th>
+                    <th>VI<br>2:20-3:10</th>
+                    <th>VII<br>3:10-4:00</th>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>Monday</b></td>
+                    <td>English</td>
+                    <td>Mathematics</td>
+                    <td>Chemistry</td>
+                    <td rowspan="6" class="special"><b>LUNCH</b></td>
+                    <td colspan="3" class="special">LAB</td>
+                    <td>Physics</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>Tuesday</b></td>
+                    <td colspan="3" class="special">LAB</td>
+                    <td>English</td>
+                    <td>Chemistry</td>
+                    <td>Mathematics</td>
+                    <td class="special">SPORTS</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>Wednesday</b></td>
+                    <td>Mathematics</td>
+                    <td>Physics</td>
+                    <td>English</td>
+                    <td>Chemistry</td>
+                    <td colspan="3">LIBRARY</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>Thursday</b></td>
+                    <td>Physics</td>
+                    <td>English</td>
+                    <td>Chemistry</td>
+                    <td colspan="3" class="special">LAB</td>
+                    <td>Mathematics</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>Friday</b></td>
+                    <td colspan="3" class="special">LAB</td>
+                    <td>Mathematics</td>
+                    <td>Chemistry</td>
+                    <td>English</td>
+                    <td>Physics</td>
+                </tr>
+                <tr>
+                    <td class="highlight"><b>Saturday</b></td>
+                    <td>English</td>
+                    <td>Chemistry</td>
+                    <td>Mathematics</td>
+                    <td colspan="3">SEMINAR</td>
+                    <td class="special">SPORTS</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="student.js"></script>
+    <script>
+        function goToPage(select) {
+            var selectedOption = select.options[select.selectedIndex];
+            if (selectedOption.value) {
+                window.location.href = selectedOption.value;
+            }
+        }
+    </script>
+</body>
+</html>

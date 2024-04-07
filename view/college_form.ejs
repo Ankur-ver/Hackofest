@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+            padding:0px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px 20px;
+            box-shadow: 0 0 5px black;
+            background-color: skyblue;
+            color:rgb(3, 3, 81);
+            height: 132vh;
+        }
+        
+        .container h1{
+            padding: 20px;
+            text-align: center;
+        }
+        .content{
+            border: 1px solid white;
+            height: 119vh;
+            width:80%;
+            margin: auto;
+           display: flex;
+           flex-direction: column;
+          
+        }
+        input{
+            width:50%;
+            margin-left: 30%;
+            margin-bottom: 15px;
+        }
+        label{
+            margin-left: 30%;
+            margin-bottom: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        select{
+            width:100px;
+            margin-left: 30%;
+        }
+        button{
+            width:100px;
+            margin-left: 50%;
+            margin-top: 30px;
+        }
+        form{
+            margin-top: 0px;
+            width: 80%;
+            margin-left: 150px;
+        }
+        .content{
+            margin-top: 0px;
+        }
+        input{
+            border:1px solid rgb(27, 65, 189)
+        }
+        select{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #hostel{
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        #check{
+            margin-top: -38px;
+        }
+        #check3{
+            margin-top: -31px;
+        }
+        #check4{
+            margin-top: -33px;
+            margin-left: 400px;
+        }
+        #mode{
+            margin-top: 10px;
+        }
+        #organizat{
+          margin-top: 20px;
+        }
+        #time-table{
+            margin-top: 20px;
+            margin-bottom: -2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose facilities for School</h1>
+       <form action="/college/college_data" method="post">
+        <div class="content">
+            <label id="organizat"for="Organization">Name of organization</label>
+            <input type="text" name="organization" id="Organization">
+            <label for="responsible">First Name of responsibility</label>
+            <input type="text" id="responsible" name="Responsible">
+            <label for="responsible2">last Name of responsibility</label>
+            <input type="text" id="responsible2" name="Responsible2">
+            <label id=" " for="number">Phone Number</label>
+            <input type="number" name="phone">
+            <label for="email">E mail</label>
+            <input type="email" name="Email">
+            <label for="id">College Id</label>
+            <input type="id" name="ID" required="required">
+            <label for="Class">Class </label>
+           <select name="class" id="Class">
+             <option value="">select Class</option>
+             <option value="class-2 class-5">class-2 class-5</option>
+             <option value="class-6 class-9">class-6 class-9</option>
+             <option value="class-10 class-12">class-10 class-12</option>
+            
+           </select>
+           <label id="mode" for="select">
+             Mode
+           </label>
+           <select name="Select" id="select">
+             <option value="Online">Online</option>
+             <option value="Offline">Offline</option>
+           </select>
+           <label for="check" id="hostel">Hostel Management</label>
+           <input type="checkbox" id="check" name="Check">
+           <label for="check2">Fee Collection</label>
+           <input type="checkbox" id="check" name="Check2">
+           <label for="Time" id="time-table">Time Table</label>
+           <select name="time" id="Time">
+             <option value="">Time table & Scheduling</option>
+             <option value="">Hand to hand Schedule</option>
+           </select>
+           <label for="check3">Staff Attendance System</label>
+           <input type="checkbox" id="check3" name="Check3">
+           <label for="check4">Result and Mark sheet Management </label>
+           <input type="checkbox" id="check4" name="Check4">
+           <button type="submit">Submit</button>
+         </div>
+       </form>
+  
+    </div>
+</body>
+</html

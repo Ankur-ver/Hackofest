@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="logo2.png">
+    <link rel="stylesheet" href="fees.css">
+    <script
+    src="https://kit.fontawesome.com/42a182743f.js"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+</head>
+<body>
+    <section>
+       <div class="main1">
+        <div class="content1">
+            <img class="image" src="logo2.png" alt="">
+        </div>
+        <div class="content2">
+            <p>Sri Sai Inter College</p>
+        </div>
+       </div>
+       <div class="main2">
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search Students, Staffs, Events....">
+        </div>
+        <div class="profile">
+            <div class="pimg"><img src="images/student.jpg" alt=""></div>
+            <div class="p-cont">
+            <p class="one">Karan Nigam</p>
+            <p class="second">10-A</p>
+        </div>
+            
+        </div>
+       </div>
+    </section>
+    <div class="container">
+        <div class="one1">
+            <div class="sec1">
+                <h4>Main</h4>           
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="sec2">
+                <h4>Administration</h4>           
+                <ul>
+                    <li><a href="/dashboard">Academics</a></li>
+                    <li><a href="https://www.topperlearning.com/">Study Material</a></li>
+                    <li><a href="/start">Students Info</a></li>
+                </ul>
+            </div>
+            <div class="sec3">
+                <h4>Student</h4>           
+                <ul>
+                    <li><a href="/student_profile">Student Profile</a></li>
+                    <li><a href="/fees">Student Fees</a></li>
+                    <li><a href="/homework-section">Homework</a></li>
+                    <li><a href="/dashboard">Transport</a></li>
+                    <li><a href="/library">Library</a></li>
+                </ul>
+            </div>
+            <div class="sec4">
+                <h4>Exams</h4>           
+                <ul>
+                    <li><a href="/datesheet1">Date Sheet</a></li>
+                    <li><a href="/syllabus">Syllabus</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fee-section">
+            <div id="fee">
+            <fieldset id="fee_fieldset">
+                <div id="library lcenter">
+                    <h1>Total Fee</h1>
+                </div>
+                <div id="library">
+                    <h3>Tuition Fee</h3>
+                    <h4>35000-54,500 Rs</h4>
+                </div>
+                <div id="library">
+                    <h3>Registration Fee</h3>
+                    <h4>1000-2000 Rs</h4>
+                </div>
+                <div id="library">
+                    <h3>Examination</h3>
+                    <h4>1000-2000 Rs</h4>
+                </div>
+                <div id="library">
+                    <h3>Student Activity Fee</h3>
+                    <h4>750-1500 Rs</h4>
+                </div>
+                <div id="library">
+                    <h3>Medical Insurance Fee</h3>
+                    <h4>600-5000 Rs</h4>
+                </div>
+                <div id="library">
+                    <h3>Admissiion Processing Fee</h3>
+                    <h4>2000-3000 Rs</h4>
+                </div>
+                <div id="library">
+                    <h3>Library Fee</h3>
+                    <h4>500-2000 Rs</h4>
+                </div>
+                <div id="library">
+                    <h3>IT Insurance Fee</h3>
+                    <h4>500-4000 Rs</h4>
+                </div>
+                <div id="library">
+                    <h3>Identity Fee</h3>
+                    <h4>100 Rs</h4>
+                </div>
+            </fieldset>
+        </div>
+    <fieldset id="part3">
+        <div id="container">
+            <h1>Facilities Price</h1>
+            <div id="facilities">
+              <!-- Facilities and their prices will be added dynamically here -->
+            </div>
+            <div id="inputSection">
+              <input type="text" id="facilityNameInput" placeholder="Enter facility name">
+              <input type="number" id="facilityPriceInput" placeholder="Enter facility price">
+              <button id="addFacility">Add Facility</button>
+            </div>
+            <h3>Total Price: <span id="totalPrice">0</span></h3>
+          </div>
+    </fieldset>  
+        </div>
+            
+    </div>
+    <script src="index.js"></script>
+    <script src="part3.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="logo2.png">
+    <link rel="stylesheet" href="homework-section.css">
+    <script
+    src="https://kit.fontawesome.com/42a182743f.js"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+</head>
+<body>
+    <section>
+       <div class="main1">
+        <div class="content1">
+            <img class="image" src="logo2.png" alt="">
+        </div>
+        <div class="content2">
+            <p>Sri Sai Inter College</p>
+        </div>
+       </div>
+       <div class="main2">
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search Students, Staffs, Events....">
+        </div>
+        <div class="profile">
+            <div class="pimg"><img src="images/student.jpg" alt=""></div>
+            <div class="p-cont">
+            <p class="one">Karan Nigam</p>
+            <p class="second">10-A</p>
+        </div>
+            
+        </div>
+       </div>
+    </section>
+    <div class="container">
+        <div class="one1">
+            <div class="sec1">
+                <h4>Main</h4>           
+                <ul>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="sec2">
+                <h4>Administration</h4>           
+                <ul>
+                    <li><a href="/dashboard">Academics</a></li>
+                    <li><a href="https://www.topperlearning.com/">Study Material</a></li>
+                    <li><a href="/start">Students Info</a></li>
+                </ul>
+            </div>
+            <div class="sec3">
+                <h4>Student</h4>           
+                <ul>
+                    <li><a href="/student_profile">Student Profile</a></li>
+                    <li><a href="/fees">Student Fees</a></li>
+                    <li><a href="/homework-section">Homework</a></li>
+                    <li><a href="/dashboard">Transport</a></li>
+                    <li><a href="/library">Library</a></li>
+                </ul>
+            </div>
+            <div class="sec4">
+                <h4>Exams</h4>           
+                <ul>
+                    <li><a href="/datesheet1">Date Sheet</a></li>
+                    <li><a href="/syllabus">Syllabus</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="homework">
+            <div id="assignment">
+                <h2>Assignments and Homework</h2>
+            </div>
+            <div id="assignment2">
+                <div class="container_homework">
+                <div class="cont-head">
+                    <!-- <h2> Yesterday-Homework </h2> -->
+                    <button id="showBtn" onclick="showContent()" id="show">Homework: 5 Apr</button>
+                </div>
+                   
+                    <div id="content_homework" class="content"><br>
+                        <p><b>Question 1.
+                            Why did the industrial production increase in India during the First World War? (2014)</b><br>
+                        </p><p>  Answer:
+                            The War had created a new opportunity for the industrial production in India:
+                            
+                            The War situation had forced the British mills to produce things that were needed for the army. This had led to the decline of Manchester imports into India. Suddenly, Indian mills had a vast home market to supply to:
+                            As the War prolonged, Indian factories were called upon to supply war needs: jute bags, cloth for army uniforms, tents and leather boots, horse and mule saddles and a host of other items.
+                            New factories were set up and old ones ran multiple shifts. Many new workers were employed and everyone was made to work longer hours.
+                            Over the war years, industrial production boomed, local industries consolidated their position, substituting foreign manufactures and capturing home markets.
+                           </p><p> <b>Question 2.
+                            How did a series of inventions in the eighteenth century increased the efficiency of each step of the production process in cotton textile industry? Explain. (2013)<br>
+                        </b></p><p>Answer:
+                            A series of inventions in the 18th century increased the efficiency in every step of the production process, especially of cotton. The process of producing cotton involved carding, twisting, spinning and milling.
+                            
+                            The inventions enhanced the output per worker, enabling each worker to produce more, and they made possible the production of stronger threads and yam.
+                            Richard Arkwright then created the cotton mill. Cloth production was spread all over the countryside and was carried out in village households.
+                            Also now the costly new machines could be purchased, set up and maintained in the mill under one roof and management. This allowed a more careful supervision over the production process, a watch over the quality and the regulation of labour, all of which was difficult to do when production was in the countryside.
+                           </p><p> <b>Question 3.
+                            What problems were faced by the Indian cotton weavers in the 19th century? Describe. (2012)</b><br>
+                        </p><p>Answer:
+                            The Indian cotton weavers faced many problems in the 19th century:
+                            
+                            Their export collapsed.
+                            The local market shrank being flooded by the Manchester imports. Produced by machines at lower costs, the Manchester cotton goods were so cheap that they attracted the buyers and the Indian textiles could not compete with them.
+                            By 1860, Indian weavers faced a new problem. They could not get sufficient supply of raw cotton of good quality. This happened because a Civil War had broken out in America and the cotton supplies from the US to Britain were cut off and Britain turned to India. As raw cotton export from India
+                            increased, the price of raw cotton shot up. Indian weavers were forced to buy raw cotton at a very high price, so weaving did not remain profitable.
+                            Factories in India also produced goods at a mass scale which flooded the Indian markets. Thus the Indian weavers faced a tough time and it became difficult to survive.</p><br>
+                        <button onclick="closeContent()" id="close">Close</button>
+                    </div>
+                </div>
+                <div class="container_homework2">
+                    <div class="cont-head">
+                        <!-- <h2> Day Before Yesterday-Homework </h2> -->
+                    <button id="showBtn" onclick="showdaybefore()" id="show">Homework: 4 Apr</button>
+                    </div>
+                   
+                    <div id="content_homework2" class="content"><br>
+                       <p><b> Q.1: Represent the following situations in the form of quadratic equations:</b></p>
+    
+                        <p>(i) The area of a rectangular plot is 528 m2. The length of the plot (in metres) is one more than twice its breadth. We need to find the length and breadth of the plot.
+                        </p>
+                        <p>(ii) A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. What is the speed of the train?
+                        </p>  <button onclick="closedaybefore() " id="close">Close</button>
+                    </div>
+                </div>
+                <div class="container_homework3">
+                    <div class="cont-head">
+                        <!-- <h2>last 3rd day homework</h2> -->
+                        <button id="showBtn" onclick="showlast3rddayhomework()" id="show">Homework: 3 Apr</button>
+                    </div>
+                   
+                    <div id="content_homework3" class="content">
+                       <p><b> Q.1: What is a group of crows called? ...</b>
+                        <p><b> Q.2:
+                        Compared to their body weight, what animal is the strongest - Dung Beetle, Elephant, Ant, or Cow? ...
+                        How many dots appear on a pair of dice? ...</b></p>
+                      <p><b> Q.3: Which is the only body part that is fully grown from birth? ...
+                        What is acrophobia a fear of? ..</b></p>
+                        <button onclick="closelast3rddayhomework()" id="close">Close</button>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <script>
+        function showContent() {
+    document.getElementById("content_homework").style.display = "block";
+}
+
+function closeContent() {
+    document.getElementById("content_homework").style.display = "none";
+}
+function showdaybefore() {
+    document.getElementById("content_homework2").style.display = "block";
+}
+
+function closedaybefore() {
+    document.getElementById("content_homework2").style.display = "none";
+}
+function showlast3rddayhomework() {
+    document.getElementById("content_homework3").style.display = "block";
+}
+
+function closelast3rddayhomework() {
+    document.getElementById("content_homework3").style.display = "none";
+}
+    </script>
+
+</body>
+</html>

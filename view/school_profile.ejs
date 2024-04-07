@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .container{
+            margin-top: 40px;
+            height: 550px;
+            background-position: -20px 30px 40px;
+        }
+      .container img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        background-position: 20px 30px 40px;
+      }
+      .main{
+       background-color: white;
+        height:800px;
+        width:70%;
+        margin: auto;
+        position: relative;
+        top:-80px;
+      }
+      .content{
+         background-color: rgb(48, 12, 125);
+         height:25%;
+display: flex;
+      }
+      .component{
+         background-color:white;
+          height:100%;
+          width: 25%;
+          border-radius: 0px;
+         
+      }
+      .hold{
+       
+        display: flex;
+        height:70%;
+      }
+      .hold_component{
+        background-color: rgb(9, 57, 115);
+        height:98%;
+        width:50%;
+       
+      }
+    .component img{
+        height:80px;
+        width:80px;
+        padding:3px;
+        border-radius: 50%;
+        border: 1.3px dashed black;
+       
+    }
+    .component:hover{
+        border: 0.3px solid grey;
+        box-shadow:1px 1px 2px grey;
+    }
+    .image{
+        margin: auto;
+        width:30%;
+        margin-top: 14px;
+    }
+    .heading{
+        width:70%;
+        margin:auto;
+    }
+    .hold_component1 img{
+     height: 100%;
+     width:100%;
+     object-fit: cover;
+    }
+    .hold_component2{
+        padding:10px;
+        box-sizing: border-box;
+    }
+    .hold_component2 h2{
+       text-align: center;
+       margin-top: 40px;
+       color:white;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    } 
+    .hold_component2 p{
+       margin-top:40px ;
+       color:white;
+     } 
+     .hold_component2 button{
+      
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 40%;
+        border-radius: 3px;
+        padding:6px;
+        margin-top: 10px;
+        border:1px solid white;
+        
+     }
+     .academics{
+        text-align: center;
+     }
+     .facilities{
+        height:160px;
+        background-color: blue;
+        margin-bottom: 10px;
+        display: flex;
+     }
+    .Data{
+        color:black;
+        border: 2px solid white;
+        width: 20%;
+        background-color: rgb(16, 81, 178);
+    }
+    .hostel{
+        width:20%;
+        height:100%;
+    }
+    .Data h1{
+        margin-top: 10px;
+    }
+    .Data h3{
+        margin-top: 12px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images\4130475.jpg" alt="">
+    </div>
+    <div class="main">
+        <div class="content">
+            <div class="component component1">
+                <div class="image">
+                    <img src="images\image2.png" alt="">
+                </div>
+                <div class="heading">
+                    <h3>Scholarship Facility</h3>
+                    <p>Empty dummy text printing industry</p>
+                </div>
+               
+            </div>
+            <div class="component component2">
+                <div class="image">
+                    <img src="images\image copy.png" alt="">
+                </div>
+              <div class="heading">
+                <h3>skilled lecture</h3>
+                <p>Empty dummy text printing industry</p>
+              </div>
+             
+            </div>
+            <div class="component component3">
+                <div class="image">
+                    <img src="images\image copy 3.png" alt="">
+                </div>
+              <div class="heading">
+                <h3>Book library and store</h3>
+                <p>Empty dummy text printing industry</p>
+              </div>
+                
+            </div>
+            <div class="component component4">
+                <div class="image">
+                    <img src="images\image copy 2.png" alt="">
+                </div>
+               <div class="heading">
+                <h3>Professional Teachers</h3>
+                <p>Empty dummy text printing industry</p>
+               </div>
+               
+            </div>
+        </div>
+        <div class="hold">
+            <div class="hold_component hold_component1">
+                <img src="images\image.png" alt="">
+            </div>
+            <div class="hold_component hold_component2">
+                <h2>Apply For Admission</h2>
+                <p>Here you can go through the admission process and for further more detail of this school.
+                    A college admission application is a letter sent to the college's admission department to request admission to a desired course of study
+                    Most colleges have two deadlines, an early deadline and a regular deadline. The early deadline is usually November 1st and the regular deadline is usually around January 1st. Applying early can show the college that you're particularly interested in attending.
+                    Here you can go through the admission process and for further more detail of this school.
+                    A college admission application is a letter sent to the college's admission department to request admission to a desired course of study
+                    Most colleges have two deadlines, an early deadline and a regular deadline. The early deadline is usually November 1st and the regular deadline is usually around January 1st. Applying early can show the college that you're particularly interested in attending.
+                    Here you can go through the admission process and for further more detail of this school.
+                    A college admission application is a letter sent to the college's admission department to request admission to a desired course of study
+                    Most colleges have two deadlines, an early deadline and a regular deadline. The early deadline is usually November 1st and the regular deadline is usually around January 1st. Applying early can show the college that you're particularly interested in attending.
+
+                </p>
+                <button>Start Course</button>
+            </div>
+        </div>
+    </div>
+    <div class="academics">
+       <h1>Welcome to Academics</h1>
+       <p>A warm welcome to here . I am happy to see you again , and hope you find well</p>
+       <h3>Our facilities</h3>
+        <div class="facilities">
+      <% if(locals.Data){ %>
+           <div class="Data mode">
+            <h1>Mode</h1>
+           <h4><%= Data.Select %></h4> </div>
+           <div class="Data authority">
+            <h3>Authority</h3>
+             <h4><%= Data.Responsible+ Data.Responsible2 %></h4>
+           </div>
+           <div class="Data class">
+            <h2>Class</h2>
+            <h3><%= Data.class %></h3> </div>
+           <% if(Data.Check){ %>
+          <% Data.Check="Hostel Management" %>
+          <%  } %>
+           <div class="Data hostel">
+            <h3><%= Data.Check %></h3> </div>
+            <% if(Data.Check2){ %>
+                <%  Data.Check2="Fee Payment" %>
+                <%  } %>
+           <div class="Data fee">
+            <h3><%= Data.Check2 %></h3> </div>
+            <% if(Data.Check3){ %>
+                <%  Data.Check3="Staff Attendence System" %>
+                <%  } %>
+           <div class="Data staff">
+
+            <h3><%= Data.Check3 %></h3> </div>
+            <% if(Data.Check4){ %>
+                <%  Data.Check4="Result & mark sheet management" %>
+                <%  } %>
+           <div class="Data result">
+            <h3><%= Data.Check4 %></h3> </div>
+      <% } %>
+        </div>
+    </div>
+</body>
+</html>

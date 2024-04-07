@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="logo2.png">
+    <link rel="stylesheet" href="start.css">
+    <script
+    src="https://kit.fontawesome.com/42a182743f.js"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+</head>
+<body>
+    <section>
+       <div class="main1">
+        <div class="content1">
+            <img class="image" src="logo2.png" alt="">
+        </div>
+        <div class="content2">
+            <p>Sri Sai Inter College</p>
+        </div>
+       </div>
+       <div class="main2">
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search Students, Staffs, Events....">
+        </div>
+        <div class="profile">
+            <div class="pimg"><img src="images/student.jpg" alt=""></div>
+            <div class="p-cont">
+            <p class="one">Ankur Verma</p>
+            <p class="second">Teacher</p>
+        </div>
+            
+        </div>
+       </div>
+    </section>
+    <div class="container">
+        <div class="one1">
+            <div class="sec1">
+                <h4>Main</h4>           
+                <ul>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="sec2">
+                <h4>Administration</h4>           
+                <ul>
+                    <li><a href="/dashboard">Academics</a></li>
+                    <li><a href="https://www.topperlearning.com/">Study Material</a></li>
+                    <li><a href="/start">Students Info</a></li>
+                </ul>
+            </div>
+            <div class="sec3">
+                <h4>Student</h4>           
+                <ul>
+                    <li><a href="/student_profile">Student Profile</a></li>
+                    <li><a href="/fees">Student Fees</a></li>
+                    <li><a href="/homework-section">Homework</a></li>
+                    <li><a href="/dashboardl">Transport</a></li>
+                    <li><a href="/dashboard">Library</a></li>
+                </ul>
+            </div>
+            <div class="sec4">
+                <h4>Exams</h4>           
+                <ul>
+                    <li><a href="/dashboard">Date Sheet</a></li>
+                    <li><a href="/syllabus">Syllabus</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="one2">
+            <div class="otop">
+                <div class="one2head">
+                    <h2>Student Information</h2>
+                </div>  
+                    <div class="main">
+                        <i class="fa-solid fa-plus"></i>
+                        <h4>Add Student</h4>
+                    </div>
+            </div>
+            <div class="table1">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Name</th>
+                        <th>Student ID</th>
+                        <th>Class</th>
+                        <th>Group</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Contact</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentTableBody">
+                    
+                    </tbody>
+                    </table>
+            </div>
+                
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="table.js"></script>
+
+</body>
+</html>

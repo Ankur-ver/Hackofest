@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About US | School Management System</title>
+    <!-- Fontawesome -->
+    <script
+    src="https://kit.fontawesome.com/42a182743f.js"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="icon" href="logo2.png">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo"><img src="logo2.png"></a>
+            <a class="toggle">Menu</a>
+            <ul class="">
+                <li><a href="/dashboard">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><select id="loginOption">
+                    <option value="login">Login</option>
+                    <option value="student">Login as Student</option>
+                    <option value="teacher">Login as Teacher</option>
+                </select></li>
+            </ul>
+        </header>
+    </section>
+    <section class="sec2">
+        <div class="heading">
+            <h1>ABOUT US</h1>
+        </div>
+        <div class="content">
+            <div class="component">
+                <img src="images/about_us.jpg" alt="">
+            </div>
+            <div class="about">
+               
+                <P>We aim to improve the overall efficiency of the school by using the advanced technology and to take the education system at a higher level and improves the academic performances. Our School Management platform includes various modules, such as administrative module, and much more that includes:
+                </P>
+                <ul>
+                    <li>Dashboard</li>
+                    <li>Online /Offline Admission System</li>
+                    <li>Hostel Management</li>
+                    <li>Student Profile</li>
+                    <li>Fee collection</li>
+                    <li>Fees & Payments Management</li>
+                    <li>Time-Table & Scheduling</li>
+                    <li>Student Attendance System</li>
+                    <li>Staff Attendance System</li>
+                    <li>Result and Mark sheet management</li>
+                    <li>Library Management System</li>
+                    <li>Enquiry Management System</li>
+                    <li>Employee Details</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot1">
+            <p class="blogs">School Management Platform</p>
+        </div>
+        <div class="foot2">
+            <p class="blogs us">Contact Us and follow on Social Media</p>
+        <div class="contact-me">
+        <div class="contact">
+        <span class="con-logo">
+        <i class="fas fa-phone"></i>
+        + 91 11011-11001
+        </span>
+        <span class="email">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:nigamkaran812@gmail.com">
+            swadeshigoods@gmail.com
+        </a>
+        </span>
+        </div>
+        <div class="icons">
+        <span>
+        <a href="https://www.linkedin.com/in/karan-nigam-20b9a028a">
+        <i class="fab fa-linkedin"></i>
+        </a>
+        <p>linkedin</p>
+        </span>
+        <span>
+        <a href="https://www.instagram.com/karannigam9621">
+        <i class="fab fa-instagram"></i>
+        </a>
+        <p>Instagram</p>
+        </span>
+        <span>
+        <a href="https://www.facebook.com/profile.php?id=100088140395984">
+        <i class="fab fa-facebook"></i>
+        </a>
+        <p>facebook</p>
+        </span>
+        </div>
+       </div>
+        </div>
+        <div class="foot3">
+            <p class="blogs">@ All Rights Reserved</p>
+        </div>
+    </footer> 
+    <script>     document.getElementById('loginOption').addEventListener('change', function() {
+        const selectedOption = this.value;
+        console.log("hello")
+        if (selectedOption === 'student') {
+            window.location.href = '/logins';
+        } else if (selectedOption === 'teacher') {
+            console.log("hell")
+            window.location.href = '/logint';
+          
+        }
+    });
+    document.getElementById('loginOption2').addEventListener('change', function() {
+        const selectedOption = this.value;
+        console.log("hello")
+        if (selectedOption === 'student') {
+            window.location.href = '/Signup';
+        } else if (selectedOption === 'teacher') {
+            window.location.href = '/Signup';
+        }
+    });</script>
+</body>
+</html>
